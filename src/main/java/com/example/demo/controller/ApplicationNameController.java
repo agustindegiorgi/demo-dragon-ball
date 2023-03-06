@@ -1,6 +1,6 @@
-package com.demo.dragon_ball.controller;
+package com.example.demo.controller;
 
-import com.demo.dragon_ball.config.DragonBallConfig;
+import com.example.demo.config.DragonBallConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ public class ApplicationNameController {
     @Autowired
     private DragonBallConfig configuration;
 
-    @GetMapping("/get")
+    @GetMapping
     public ResponseEntity<String> getAppName() {
         return ResponseEntity.ok(configuration.getApplicationName());
     }

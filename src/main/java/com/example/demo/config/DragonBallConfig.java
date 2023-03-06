@@ -1,6 +1,5 @@
-package com.demo.dragon_ball.config;
+package com.example.demo.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,8 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties
 public class DragonBallConfig {
 
-    @Value("${application.name}")
-    private String applicationName;
+    private String applicationName = "ms-demo-dragon-ball";
 
     public String getApplicationName() {
         return applicationName;
