@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties
+@ConfigurationProperties("ms-demo-config")
 public class DragonBallConfig {
 
     private String applicationName = "ms-demo-dragon-ball";
